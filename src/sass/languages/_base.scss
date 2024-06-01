@@ -1,0 +1,23 @@
+.languages-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.languages-list li {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.languages-list li:hover {
+    transform: scale(2) rotate(5deg); /* Increased scale value for a larger enlargement */
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
