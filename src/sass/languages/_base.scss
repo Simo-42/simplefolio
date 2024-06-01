@@ -21,3 +21,30 @@
     width: 50px;
     height: 50px;
 }
+.framed {
+  border: 2px solid #000; /* Couleur et épaisseur du cadre */
+  padding: 5px; /* Espace entre l'image et le cadre */
+  border-radius: 5px; /* Arrondir les coins du cadre */
+  opacity: 0; /* Initialement invisible */
+  transform: translateY(20px); /* Initialement déplacé vers le bas */
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Transition pour la transformation et la couleur de bordure */
+}
+
+.framed.show {
+  opacity: 1; /* Visible */
+  transform: translateY(0); /* Position initiale */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transition pour l'apparition */
+}
+
+.framed:hover {
+  transform: scale(1.1); /* Agrandit l'image de 10% au survol */
+  border-color: #3498db; /* Change la couleur du cadre au survol */
+}
+
+.section-divider {
+    border: 0;
+    height: 4px;
+    background: #000; /* Couleur de la ligne */
+    margin: 40px 0; /* Espacement au-dessus et en dessous de la ligne */
+  }
+  
